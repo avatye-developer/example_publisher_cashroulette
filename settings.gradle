@@ -1,0 +1,3 @@
+rootProject.name = "Android.SDK.CashRoulette.Publisher.Example"
+include ':example-cashroulette-publisher-kotlin'
+include ':example-cashroulette-publisher-java'

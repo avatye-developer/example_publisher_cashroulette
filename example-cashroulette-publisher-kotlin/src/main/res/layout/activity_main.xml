@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/launch_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/launch_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="RESULT" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/launch_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/button_base_selector"
+        android:fontFamily="@font/cashroulette_res_font"
+        android:text="LAUNCH:CashRoulette"
+        android:textColor="#FFF" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/launch_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launch_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_cashroulette_box"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
