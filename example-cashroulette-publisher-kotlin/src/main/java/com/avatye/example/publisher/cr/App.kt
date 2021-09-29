@@ -12,7 +12,12 @@ class App : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
-        CashRoulettePublisher.initialize(application = this, publisherID = publisherID, publisherAppKey = publisherAppKey, log = true)
+        CashRoulettePublisher.initialize(
+            application = this,
+            publisherID = publisherID,
+            publisherAppKey = publisherAppKey,
+            log = true
+        )
     }
-    
+
 }

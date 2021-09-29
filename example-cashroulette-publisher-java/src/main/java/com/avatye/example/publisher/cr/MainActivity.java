@@ -7,10 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.avatye.cashroulette.CashRoulettePublisher;
-import com.avatye.cashroulette.business.model.GenderType;
-import com.avatye.cashroulette.business.model.user.Profile;
 import com.avatye.example.publisher.cr.databinding.ActivityMainBinding;
-import com.avatye.library.support.helper.SupportHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,35 +17,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(vb.getRoot());
-
-        // set profile
-        final String androidID = SupportHelper.INSTANCE.getAndroidID();
-        CashRoulettePublisher.setProfile(new Profile(androidID, 1979, GenderType.MALE));
+        // parameter value
+        final String appUserID = "publisher@avatye.com";
+        final String publisherID = App.publisherID;
+        final String publisherAppKey = App.publisherAppKey;
+        final String aaid = "8c8ba40c-0f04-43cc-9a3a-53fb0fccb5d6";
+        // set appUserID
+        CashRoulettePublisher.setAppUserID(appUserID);
         // click event
         vb.launchButton.setOnClickListener(v -> {
-            CashRoulettePublisher.launch(
-                    this,
-                    App.publisherID,
-                    App.publisherAppKey,
-                    "8c8ba40c-0f04-43cc-9a3a-53fb0fccb5d6",
-                    new CashRoulettePublisher.ILaunchCallback() {
-                        @Override
-                        public void onSuccess() {
-                            vb.launchResult.setText("onSuccess");
-                            vb.launchBanner.setVisibility(View.VISIBLE);
-                            vb.launchButton.setVisibility(View.INVISIBLE);
-                        }
+            CashRoulettePublisher.launch(this, App.publisherID, App.publisherAppKey, aaid, new CashRoulettePublisher.ILaunchCallback() {
+                @Override
+                public void onSuccess() {
+                    vb.launchResult.setText("onSuccess");
+                    vb.launchBanner.setVisibility(View.VISIBLE);
+                    vb.launchButton.setVisibility(View.INVISIBLE);
+                }
 
-                        @Override
-                        public void onFailure() {
-                            vb.launchResult.setText("onFailure");
-                            vb.launchBanner.setVisibility(View.GONE);
-                            vb.launchButton.setVisibility(View.VISIBLE);
-                        }
-                    }
-            );
+                @Override
+                public void onFailure() {
+                    vb.launchResult.setText("onFailure");
+                    vb.launchBanner.setVisibility(View.GONE);
+                    vb.launchButton.setVisibility(View.VISIBLE);
+                }
+            });
         });
-
 
         vb.launchBanner.setOnClickListener(v -> {
             CashRoulettePublisher.start(this);
