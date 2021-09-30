@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(vb.getRoot());
         // parameter value
-        final String appUserID = "publisher@avatye.com";
+        final String appUserID = "publisher-example@avatye.com";
         final String publisherID = App.publisherID;
         final String publisherAppKey = App.publisherAppKey;
-        final String aaid = "8c8ba40c-0f04-43cc-9a3a-53fb0fccb5d6";
+        final String aaid = "00000000-0000-0000-0000-009876543210";
         // set appUserID
         CashRoulettePublisher.setAppUserID(appUserID);
         // click event

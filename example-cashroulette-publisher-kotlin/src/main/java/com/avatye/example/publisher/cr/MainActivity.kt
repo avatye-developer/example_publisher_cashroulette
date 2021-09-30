@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(vb.root)
         // parameter value
-        val appUserID = "publisher@avatye.com"
+        val appUserID = "publisher-example@avatye.com"
         val publisherID = App.publisherID
         val publisherAppKey = App.publisherAppKey
-        val aaid = "8c8ba40c-0f04-43cc-9a3a-53fb0fccb5d6"
+        val aaid = "00000000-0000-0000-0000-009876543210"
         // set appUserID
         CashRoulettePublisher.setAppUserID(appUserID)
         // click event

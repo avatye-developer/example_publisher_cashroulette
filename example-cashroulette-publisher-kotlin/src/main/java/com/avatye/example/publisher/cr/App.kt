@@ -6,8 +6,8 @@ import com.avatye.cashroulette.CashRoulettePublisher
 class App : MultiDexApplication() {
 
     companion object {
-        const val publisherID: String = "1b865260495246e58ecf77777961f881"
-        const val publisherAppKey: String = "cash_roulette"
+        const val publisherID = "6aeb9028f1aa42aaa8aa8a3f10f36f0c"
+        const val publisherAppKey = "cash_roulette"
     }
 
     override fun onCreate() {

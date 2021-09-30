@@ -11,10 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidSDKCashRoulettePublisherExample">
-        <!-- region { host / api-dev, api-stage, api } -->
-        <meta-data
-            android:name="avatye_api"
-            android:value="api-dev" />
+
         <meta-data
             android:name="avatye_mode_maintenance"
             android:value="true" />

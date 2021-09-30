@@ -6,7 +6,7 @@ import com.avatye.cashroulette.CashRoulettePublisher;
 
 public class App extends MultiDexApplication {
 
-    public static final String publisherID = "1b865260495246e58ecf77777961f881";
+    public static final String publisherID = "6aeb9028f1aa42aaa8aa8a3f10f36f0c";
     public static final String publisherAppKey = "cash_roulette";
 
     @Override
