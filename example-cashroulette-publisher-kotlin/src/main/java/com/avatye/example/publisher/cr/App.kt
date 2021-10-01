@@ -7,7 +7,7 @@ class App : MultiDexApplication() {
 
     companion object {
         const val publisherID = "6aeb9028f1aa42aaa8aa8a3f10f36f0c"
-        const val publisherAppKey = "cash_roulette"
+        const val publisherAppKey = "cash_roulette_publisher"
     }
 
     override fun onCreate() {
