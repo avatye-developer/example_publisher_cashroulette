@@ -21,9 +21,9 @@
         <meta-data
             android:name="enable_ap_log"
             android:value="enable" />
-
         <activity
             android:name=".IntroActivity"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
