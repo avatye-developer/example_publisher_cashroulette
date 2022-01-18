@@ -23,7 +23,7 @@ allprojects {
 }
 
 ext {
-    cashRouletteSdkVersion = '2021.12.7'
+    cashRouletteSdkVersion = '2022.1.3'
     ktxcore_version = '1.6.0'
     appcompat_version = '1.3.1'
     material_version = '1.4.0'
